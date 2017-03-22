@@ -1,0 +1,30 @@
+{
+  "name": "cours-optimisation-execution-parallele-client-nodejs",
+  "version": "1.0.0",
+  "description": "Client web pour les serveurs Java SE du cours d'optimisation des exécutions parallèles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive -t 7000" ,
+    "all" : "npm install && npm start" ,
+    "reset" : "rm -rf node_modules npm-debug.log" ,
+    "fromscratch" : "npm run reset && npm run all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele.git"
+  },
+  "author": "SkayParadigm",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele/issues"
+  },
+  "homepage": "https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele#readme",
+  "dependencies": {
+    "express": "4.15.2"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "mocha": "3.2.0"
+  }
+}
