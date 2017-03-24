@@ -1,0 +1,30 @@
+{
+  "name": "cours-optimisation-execution-parallele-serveur-web-nodejs",
+  "version": "1.0.0",
+  "description": "Serveur web décliné en deux versions. Un s'appuyant sur un cluster de processus pour mieux gérer la charge des requêtes et un autre single instance. Pour le cours d'optimisation des exécutions parallèles.",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive" ,
+    "reset": "rm -rf node_modules npm-debug.log",
+    "fromscratch": "npm run reset && npm install" ,
+    "clustered" : "node server.clustered.js" ,
+    "single" : "node server.single.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele.git"
+  },
+  "author": "SkayParadigm",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele/issues"
+  },
+  "homepage": "https://github.com/SkayParadigm/Cours_OptimisationExecutionParallele#readme",
+  "dependencies": {
+    "express": "4.15.2"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "mocha": "3.2.0"
+  }
+}
